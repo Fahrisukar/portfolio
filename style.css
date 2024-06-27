@@ -1,0 +1,75 @@
+* {
+    padding: 0;
+    margin: 0;
+    
+}
+
+body {
+    height: 100vh;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    background-color: #081b29;
+}
+#welcome-container {
+    text-align: center;
+    color: white;
+}
+#name-input-section {
+    margin-top: -20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+#name {
+    background-color: transparent;
+    border: none;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    color: white;
+    outline: none;
+    text-align: center;
+}
+
+#go {
+    padding: 10px 20px;
+    color: white;
+    cursor: pointer;
+    border-radius: 0px;
+    display: flex;
+    margin-top: -4px;
+    width: 70px;
+    transition: .5s;
+    text-decoration: none;
+    position: relative;
+    font-size: 16px;
+    justify-content: center;
+}
+
+#go:hover {
+    color: #0ef;
+}
+
+#go span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    border-bottom: 2px solid #0ef;
+    border-radius: 15px;
+    transform: scale(0) translateY(50px);
+    transition: .5s;
+}
+
+#go:hover span{
+    transform: scale(1) translateY(0);
+}
+
